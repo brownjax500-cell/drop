@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GreenAI Home – Smart AI Dropshipping Store</title>
+
+<style>
+/* ------------------------------
+   GLOBAL THEME
+--------------------------------*/
+:root {
+  --green: #16a34a;
+  --green-light: #22c55e;
+  --green-soft: #bbf7d0;
+  --teal: #0ea5e9;
+  --gray: #f3f4f6;
+  --gray-dark: #6b7280;
+  --white: #ffffff;
+  --black: #111827;
+  --radius: 14px;
+  --shadow: 0 8px 24px rgba(0,0,0,0.08);
+  --shadow-hover: 0 12px 32px rgba(0,0,0,0.12);
+  --transition: 0.25s ease;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--gray);
+  color: var(--black);
+}
+
+/* ------------------------------
+   HEADER
+--------------------------------*/
+header {
+  background: var(--white);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--green);
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: var(--green);
+}
+
+/* ------------------------------
+   HERO SECTION
+--------------------------------*/
+.hero {
+  background: var(--white);
+  padding: 60px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: var(--black);
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: var(--gray-dark);
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  background: var(--green);
+  color: var(--white);
+  padding: 14px 24px;
+  border-radius: var(--radius);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.hero-btn:hover {
+  background: var(--green-light);
+}
+
+.hero img {
+  width: 420px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* ------------------------------
+   PRODUCT GRID
+--------------------------------*/
+.section-title {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 40px;
+}
+
+.product-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+  transition: var(--transition);
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.product-info {
+  margin-top: 12px;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--green);
+  margin-top: 6px;
+}
+
+.product-benefits {
+  font-size: 14px;
+  color: var(--gray-dark);
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+.add-btn {
+  margin-top: 14px;
+  width: 100%;
+  padding: 12px;
+  background: var(--green);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 15px;
+  transition: var(--transition);
+}
+
+.add-btn:hover {
+  background: var(--green-light);
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+footer {
+  background: var(--white);
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  color: var(--gray-dark);
+  box-shadow: var(--shadow);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">GreenAI Home</div>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Smart AI‑Powered Home Gadgets</h1>
+    <p>Clean, modern, and ready to dropship. High‑margin AI‑themed products your customers will love.</p>
+    <button class="hero-btn" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+      Shop Best Sellers
+    </button>
+  </div>
+
+  <img src="https://images.pexels.com/photos/4790260/pexels-photo-4790260.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Smart home hero image">
+</section>
+
+<!-- PRODUCTS -->
+<h2 class="section-title" id="products">Best Selling Products</h2>
+
+<div class="product-grid">
+
+  <!-- PRODUCT 1 -->
+  <div class="product-card">
+    <img src="https://images.pexels.com/photos/7238759/pexels-photo-7238759.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="LED Strip">
+    <div class="product-info">
+      <div class="product-title">AuroraSense LED Strip</div>
+      <div class="product-price">$39</div>
+      <div class="product-benefits">
+        • Music reactive<br>
+        • USB powered<br>
+        • Perfect for room makeovers
+      </div>
+      <button class="add-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- PRODUCT 2 -->
+  <div class="product-card">
+    <img src="https://images.pexels.com/photos/6956441/pexels-photo-6956441.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Night orb">
+    <div class="product-info">
+      <div class="product-title">NeuraGlow Night Orb</div>
+      <div class="product-price">$29</div>
+      <div class="product-benefits">
+        • Motion activated<br>
+        • Soft warm glow<br>
+        • Great for hallways & bedrooms
+      </div>
+      <button class="add-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- PRODUCT 3 -->
+  <div class="product-card">
+    <img src="https://images.pexels.com/photos/3965552/pexels-photo-3965552.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Air purifier">
+    <div class="product-info">
+      <div class="product-title">AirHalo Mini Purifier</div>
+      <div class="product-price">$49</div>
+      <div class="product-benefits">
+        • Compact HEPA filter<br>
+        • Quiet operation<br>
+        • LED accent ring
+      </div>
+      <button class="add-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- PRODUCT 4 -->
+  <div class="product-card">
+    <img src="https://images.pexels.com/photos/5082559/pexels-photo-5082559.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Wireless charger">
+    <div class="product-info">
+      <div class="product-title">HaloCharge Wireless Pad</div>
+      <div class="product-price">$32</div>
+      <div class="product-benefits">
+        • Fast charging<br>
+        • LED halo glow<br>
+        • Works with all Qi devices
+      </div>
+      <button class="add-btn">Add to Cart</button>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2024 GreenAI Home — Built for AI Dropshipping Stores
+</footer>
+
+</body>
+</html>
